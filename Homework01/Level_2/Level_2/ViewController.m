@@ -19,7 +19,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-   、
     self.view.backgroundColor = [UIColor whiteColor];
     self.btn = [[UIButton alloc]initWithFrame:CGRectMake(70, 300, 300, 300)];
     self.btn.backgroundColor = [UIColor redColor];

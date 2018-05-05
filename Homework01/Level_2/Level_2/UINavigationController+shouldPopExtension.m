@@ -12,7 +12,7 @@
 @implementation UINavigationController (shouldPopExtension)
 
 + (void)load{
-  
+    
         Method originalMethod = class_getInstanceMethod([self class], @selector(navigationBar:shouldPopItem:));
         Method sizzledMethod = class_getInstanceMethod([self class], @selector(my_navigationBar:shouldPopItem:));
         method_exchangeImplementations(originalMethod, sizzledMethod);
@@ -31,5 +31,6 @@
     }
     return [self my_navigationBar:navigationBar shouldPopItem:item];
 }
+
 
 @end
